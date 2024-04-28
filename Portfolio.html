@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/9c7fdc9e29.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="photo_kranthi.jpg" type="image/x-icon">
+   
+   <style>
+        /* Reset default margin and padding */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f3f3f3e9;
+            color: #333;
+            line-height: 1.8;
+             
+        }  
+        div{
+            padding:50px;
+            color:#333;
+            font-size: 30px;;
+
+        }
+        div a{
+            padding: 10px;
+        }
+       
+
+        header {
+            background-color: #4CAF50;
+            color: #fff;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        h1 {
+            margin: 10px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            display: flex;
+            flex-direction: row;
+        }
+
+        nav ul li {
+            margin-right: 20px;
+            padding: 20px;
+        }
+
+        nav ul li a {
+        font-size:20px;
+            color: #fff;
+            text-decoration: none;
+        }
+    li:hover{
+            background-color: red;
+           padding: auto;
+        }
+        
+        main {
+            width: 100%;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        section {
+
+            margin: 30px;
+            background-color: #fff;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 100%;
+        }
+       
+        
+         
+        h2 {
+            margin-bottom: 30px;
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .project {
+
+            margin-bottom: 30px;
+        }
+
+        .project h3 {
+            font-size: 20px;
+            color: #4CAF50;
+            font-weight: bold;
+        }
+
+        .project p {
+            font-size: 20px;
+            color: #666;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+      
+
+        /* Media queries */
+        @media screen and (max-width: 768px) {
+            header {
+                flex-direction: column;
+                width: 100%;
+
+            }
+
+       
+            nav ul {
+              width:100%;
+                flex-direction: column;
+
+            }
+       
+            main {
+            
+                padding: 50px;
+            }
+
+            section {
+                margin: 20px 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+   
+
+    <header>
+        <h1 style="font-size:40px;text-shadow:0px 2px 2px black">My Portfolio</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <center><strong id="welcome-text" style="font-size: 40px; text-shadow: 0px 1px 2px green;">Welcome to my page</strong></center>
+
+    
+
+    <main>
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis ligula ut lorem eleifend, eu eleifend risus scelerisque. Vivamus porta nibh eget felis hendrerit, non suscipit risus dictum. Sed posuere justo at dapibus consectetur. Nulla facilisi. Suspendisse potenti.</p>
+        </section>
+        
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="project">
+                <h3>Project 1</h3>
+                <span class="badge bg-primary"></span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta nisi laborum a eveniet repellendus pariatur quam itaque nobis, deleniti praesentium? Fugit tenetur cumque illum, officiis blanditiis reprehenderit harum quia eum.</p>
+            </div>
+            <div class="project">
+                <h3>Project 2</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae ipsum odit sit ea placeat voluptatem consequuntur deserunt enim at! Nam reprehenderit adipisci nemo nihil eveniet ducimus incidunt, laborum dolorem provident.</p>
+            </div>
+            <div class="project">
+                <h3>Project 3</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio quibusdam ut dolore debitis saepe doloremque ratione deserunt? Voluptates, dignissimos laboriosam! Omnis officiis libero a beatae, laborum sit ducimus nesciunt atque?</p>
+            </div>
+        </section>
+        <section id="projects">
+         <p>Im looking forward to join in a reputed organization as a front -end or full stack developer.Thank for visiting my page</p>
+        </section>
+        <section id="contact">
+            <h2>Contact</h2>
+            <form action="https://www.w3schools.com" >
+                <label for="name" class="form-label">Name:</label>
+                <input type="text" class="form-control" id="name" name="name"><br><br>
+                <label for="email" class="form-label">Email:</label>
+                <input type="email" class="form-control" name="email"><br><br>
+                <label for="message">Message:</label><br>
+                <textarea id="message" class="form-control" name="message" rows="4" cols="50"></textarea><br><br>
+                <input class="btn btn-primary" type="submit" value="Submit">
+            </form>
+        </section>
+    </main>
+ <div>
+   <strong style="font-size: 40px;"> Follow Me:</strong>
+    <br>
+    <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+<a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+<a href="https://www.twitter.com/"><i class="fa-brands fa-twitter"></i></a>
+
+</div>
+    <footer>
+        <p>&copy; 2024 My Portfolio. All rights reserved.</p>
+    </footer>
+   
+</body>
+</html>
